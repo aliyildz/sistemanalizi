@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, .8);
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header .container .logo {
+  font-size: 34px;
+  color: rgb(231, 231, 231);
+}
+
+.header .container .logo img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+
+.header .container .navbar {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.header .container .navbar a {
+  color: #333;
+  font-weight: 500;
+  letter-spacing: .9px;
+  transition: 200ms all ease;
+}
+
+.header .container .navbar a:hover {
+  color: #D5B981;
+}
+
+.header .container .navbar button {
+  border: none;
+  background: #D5B981;
+  padding: 8px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header .container .navbar button:hover{
+  background-color: #c4aa76;
+}
+
+.main .home-page {
+  background-color: #D5B981;
+  height: calc(100vh - 60px);
+}
+
+.main .home-page .container {
+  display: flex;
+  align-items: center;
+}
+
+.main .container .home-page-detail h2 {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.main .container .home-page-detail p{
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.main .container .home-page-detail p span{
+  font-weight: 500;
+}
+
+.main .about .container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.main .about .container .about-img {
+  margin: 60px 0 0 60px;
+  position: relative;
+  max-width: 400px;
+}
+
+.main .about .container .about-img::before {
+  position: absolute;
+    content: "";
+    top: -60px;
+    right: 60px;
+    bottom: 60px;
+    left: -60px;
+    background: #1d2434;
+    z-index: 0;
+}
+
+.main .about .container .about-img::after{
+  position: absolute;
+  content: "";
+  top: -30px;
+  right: 30px;
+  bottom: 30px;
+  left: -30px;
+  background: transparent;
+  border: 1px solid #fff;
+  z-index: 2;
+}
+
+.main .about .container .about-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.main .about .container .about-detail {
+  max-width: 600px;
+  width: 100%;
+}
+
+.main .about .container .about-detail h2 {
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #797979;
+}
+
+.main .about .container .about-detail h4 {
+  font-size: 44px;
+  color: #1d2434;
+  margin-bottom: 12px;
+}
+
+.main .about .container .about-detail p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #797979;
+}
+
+.main .prices .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.main .prices .container .prices-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .prices .container .prices-header h2 {
+  font-size: 20px;
+  color: #797979;
+}
+
+.main .prices .container .prices-header h4 {
+  font-size: 44px;
+  color: #1d2434;
+  max-width: 500px;
+}
+
+.main .prices .container .prices-boxes {
+  display: flex;
+  column-gap: 40px;
+}
+
+.main .prices .container .prices-boxes .prices-box {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(29,36,52,.04);
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-img {
+  position: relative;
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-img::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
+.main .prices .container .prices-boxes .prices-box img {
+  width: 100%;
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-detail {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-detail .price {
+  color: #1d2434;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-detail-header {
+  color: #1d2434;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main .prices .container .prices-boxes .prices-box .prices-paragraf {
+  color: #797979;
+}
+
+.footer{
+  background:linear-gradient(to left, rgba(0,0,0,.9), rgba(0,0,0,.6)) ;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  color: #fafafa;
+}
+
+.footer .container div {
+  font-size: 20px;
+}
+
+.footer .container div a {
+  color: #D5B981;
+  font-size: 24px;
+}
+
+.footer .container div a:hover{
+  text-decoration: underline;
+}
+
+.randevu-wrapper {
+  min-height: 100vh;
+  padding: 8px;
+}
+
+.randevu-wrapper .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.randevu-wrapper .container h2 {
+  color: #1d2434;
+  font-size: 44px;
+  margin-bottom: 3rem;
+}
+
+.randevu-wrapper .container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.randevu-wrapper .container form input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 6px;
+  width: 100%;
+  outline: none;
+}
+
+.randevu-wrapper .container form input:focus{
+  border-color: #797979;
+}
+
+.randevu-wrapper .container form label span {
+  color: #1d2434;
+  font-weight: 500;
+}
+
+.randevu-wrapper .container form button {
+  border: none;
+  background: #D5B981;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.randevu-wrapper .container form button:hover{
+  background-color: #c4aa76;
+}
+
+.randevu-wrapper .back-btn {
+  border: none;
+  background-color: #D5B981;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.randevu-wrapper .back-btn:hover{
+  background-color: #c4aa76;
+}
+
+.randevu-wrapper .back-btn span{
+  font-size: 20px;
+  margin-right: 10px;
+}
