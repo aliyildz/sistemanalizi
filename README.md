@@ -16,6 +16,32 @@ SİSTEM ANALİZİ VE TASARIMI - II
 ## Database
 ![Uygulama Ekran Görüntüsü](https://r.resimlink.com/p7ntLiHSOv.png)
 
+## Bilgisayarınızda Çalıştırın
+
+
+Gerekli paketleri yükleyin
+
+```bash
+  npm install
+```
+
+Sunucuyu çalıştırın
+
+```bash
+  npm run start
+```
+
+Node.js BerberProject/berber/backend/
+```bash
+  node -v npm
+```
+
+BerberProject/berber/adminpanel/
+
+```bash
+  node -v npm
+```
+  
 
 
 
