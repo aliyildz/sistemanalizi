@@ -1,6 +1,6 @@
 
 ## YEPYENİ BİR BERBER X
-![Uygulama Ekran Görüntüsü](https://r.resimlink.com/Nk85ohpUPT4C.png)
+![Uygulama Ekran Görüntüsü](https://r.resimlink.com/i9TMyg.png)
 
 ## Özellikler
 
